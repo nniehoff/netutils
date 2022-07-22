@@ -1110,3 +1110,15 @@ class MikroTikConfigParser(BaseSpaceConfigParser):
             config (str): The config text to parse.
         """
         super(MikroTikConfigParser, self).__init__(config)
+
+
+class S300ConfigParser(IOSConfigParser):
+    """Cisco S300 implementation of ConfigParser Class."""
+
+    def __init__(self, config: str):
+        """Create ConfigParser Object.
+
+        Args:
+            config (str): The config text to parse.
+        """
+        super(S300ConfigParser, self).__init__(config)
